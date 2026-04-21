@@ -78,7 +78,7 @@ class Program
 
                 if (cmd.StartsWith("map ", StringComparison.OrdinalIgnoreCase))
                 {
-                    string[] parts = cmd.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                    string[] parts = cmd.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
                     if (parts.Length == 3)
                     {
